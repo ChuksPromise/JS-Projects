@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JS PROJECTS</title>
+      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link rel="icon" href="./site-icon.PNG">
+   </head>
+   <body>
+      <h1>
+         JAVASCRIPT PROJECTS
+      </h1>
+
+      <!-- PROJECT LISTS -->
+      <section class="project-list">
+         <!-- SIMPLE CALCULATOR -->
+         <div class="project project-one" >
+            <div class="inner">
+                <h1>SIMPLE CALCULATOR</h1>
+                <div class="cal">
+                  <div class="vals">
+                     <input type="text" id="firstValue">
+                     <span id="operator"></span>
+                     <input type="text" id="secondValue">
+                  </div>
+                  <p id="ans" class="ans"></p>
+                  <div class="operators">
+                     <button class="plus" id="solv" value="plus" onclick="sum()">
+                        <i class="bi bi-plus-square"></i>
+                     </button>
+                     <button class="minus" id="solve" value="minus" onclick="sub()">
+                        <i class="bi bi-dash-square"></i>
+                     </button>
+                     <button class="divide" id="solve" value="divide" onclick="divide()">
+                        <i class="bi bi-slash-square"></i>
+                     </button>
+                     <button class="multiply" id="solve" value="multiply" onclick="multiply()">
+                        <i class="bi bi-x-square"></i>
+                     </button>
+                     <button class="multiply" id="solve" value="multiply" onclick="clearAll()">
+                        C
+                     </button>
+                  </div>
+                </div>
+            </div>
+         </div>
+         <!-- SIMPLE CALCULATOR ENDS -->
+
+         <!-- TO DO APP  -->
+         <div class="project project-two" >
+            <div class="inner">
+               <h1>TO DO APP</h1>
+               <div class="todoapp">
+                  <div class="adding">
+                     <input type="text" id="gettask" maxlength="12">
+                     <button id="addtask">ADD TASK</button>
+                  </div>
+                  <ul class="tasks" id="tasks">
+                    
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- TO DO APP ENDS  -->
+
+         <!-- HEXDECIMAL COLOR GENERATOR -->
+         <div class="project project-three" >
+            <div class="inner">
+               <h1>HEXDECIMAL COLOR GENERATOR</h1>
+               <div class="all-color">
+                  <div class="getcolor">
+                     <button id="generateColor">GENERATE COLOR</button>
+                     <button id="clearColor">CLEAR COLOR</button>
+                  </div>
+                  <div id="displayCode"></div>
+               </div>
+            </div>
+         </div>
+         <!-- HEXDECIMAL COLOR GENERATOR -->
+      </section>
+      <section class="project-list">
+         <!-- PASSWORD GENERATOR -->
+         <div class="project project-four" >
+            <div class="inner">
+               <h1>PASSWORD GENERATOR</h1>
+               <div class="passwordGenerator">
+                  <button id="passwordGenerator">GENERATE PASSWORD</button>
+                  <ol id="listOfPassword">
+                    
+                  </ol>
+               </div>
+            </div>
+         </div>
+         <!-- PASSWORD GENERATOR -->
+
+         <!-- LOAN REPAYMENT APP -->
+         <div class="project project-five" >
+            <div class="inner">
+               <h1>LOAN REPAYMENT APP</h1>
+               <div class=" loanRepayment">
+                  <div id="getAmountToLoan" class="getAmountToLoan">
+                     <div>
+                        <input type="text" id="getBid" class="getBid" placeholder="Type the Amount">
+                        <select id="month">
+                           <option value="duration" id="month">Duration</option>
+                           <option value="1" id="month">1 Month</option>
+                           <option value="2" id="month">2 Months</option>
+                           <option value="3" id="month">3 Months</option>
+                           <option value="4" id="month">4 Months</option>
+                        </select>
+                     </div>
+                     <button id="calculate">CALCULATE</button>
+                  </div>
+                  <div id="resetLoanPrice">
+                     <p id="showmessage">
+                        
+                     </p>
+                     <button id="reset">RESET</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- LOAN REPAYMENT APP ENDS HERE -->
+
+         <!-- GUESS GAME STARTS HERE -->
+         <div class="project project-six" >
+            <div class="inner">
+               <h1>GUESS GAME</h1>
+              <div class="guessgame">
+                  <div>
+                     <input type="text" id="personGuess">
+                     <button id="guessButton"> GUESS</button>
+                     <button  id="resetGuess"> RESET</button>
+                  </div>
+                  <p id="showGuessState">
+                     
+                  </p>
+              </div>
+            </div>
+         </div>
+         <!-- GUESS GAME ENDS HERE ENDS  -->
+      </section>
+
+      <script src="index.js"></script>
+   </body>
+</html>

@@ -1,0 +1,281 @@
+*{
+   font-family: 'Courier New', Courier, monospace;
+}
+body{
+   background: black;
+   color: grey;
+   margin: 0px;
+}
+body>h1{
+   line-height: 100px;
+   background: linear-gradient(to right,white , black, white);
+   margin: 0px;
+   text-align: center;
+   
+}
+.project-list{
+   margin: 25px 5%;
+   display: flex;
+   justify-content: space-between;
+}
+.project-list .project{
+   border-radius: 10px;
+   padding: 10px 20px;
+   border: 2px solid gray;
+   width: 27%;
+}
+.project .inner>h1{
+   text-align: center;
+}
+.project button:active{
+   background: rgb(20, 20, 20) !important;
+   color: white !important;
+}
+.project .vals{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.project .vals input{
+   width: 40%;
+   padding: 10px;
+   background: rgb(6, 6, 6);
+   border: none;
+   outline: none;
+   box-shadow: inset 0px 0px 5px white;
+   color: gray;
+   border-radius: 5px;
+   font-size: 30px;
+   font-weight: 900;
+}
+.project .vals span{
+   font-size: 30px;
+   font-weight: bold;
+   margin: 3px 0px;
+}
+.project .ans{
+   font-size: 30px;
+   font-weight: bold;
+   text-align: right;
+   margin: 10px 0px;
+}
+.project .operators{
+   margin: 20px 0px;
+   display: flex;
+   justify-content: space-between;
+}
+.project .operators button{
+   background: rgb(6, 6, 6);
+   color: gray;
+   border: none;
+   box-shadow: -5px -3px 5px 2px rgba(128, 128, 128, 0.483);
+   border-radius: 5px;
+   font-size: 30px;
+   width: 50px;
+   line-height: 50px;
+   margin: 5px;
+}
+.project .operators button:active{
+   background: rgb(20, 20, 20)
+}
+
+.project .todoapp{
+   display: flex;
+   flex-direction: column;
+}
+.project .todoapp .adding{
+   display: flex;
+   justify-content: space-between   ;
+}
+.project .todoapp input{
+   width: 60%;
+   padding: 10px;
+   background: rgb(6, 6, 6);
+   border: none;
+   outline: none;
+   box-shadow: inset 0px 0px 5px white;
+   color: gray;
+   border-radius: 5px;
+   font-size: 30px;
+   font-weight: 900;
+}
+.project .todoapp button{
+   background: rgb(6, 6, 6);
+   color: gray;
+   border: none;
+   box-shadow: -5px -3px 5px 2px rgba(128, 128, 128, 0.483);
+   border-radius: 5px;
+   line-height: 50px;
+   margin: 5px;
+}
+.project button:active{
+   background: rgb(20, 20, 20);
+   color: white;
+   
+}
+.project .todoapp ul{
+   list-style-type: none;
+   padding: 0px ;
+}
+.project .todoapp li{
+   margin: 2px;
+   padding: 10px;
+   border-radius: 10px;
+   font-size: 20px;
+   color: white;
+   box-shadow: inset 0px 0px 5px white;
+   cursor: pointer;
+}
+.project .getcolor{
+   display: flex;
+   justify-content: space-between;
+}
+.project .all-color button{
+   background: rgb(6, 6, 6);
+   color: gray;
+   border: none;
+   box-shadow: -5px -3px 5px 2px rgba(128, 128, 128, 0.483);
+   border-radius: 5px;
+   line-height: 50px;
+   margin: 5px;
+}
+.project .all-color #displayCode{
+   text-align: center;
+   margin: 0px auto;
+   line-height: 50px;
+   width: 50%;
+   box-sizing: border-box;
+   color: white
+}
+.project .passwordGenerator{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.project .passwordGenerator button{ 
+   background: rgb(6, 6, 6);
+   color: gray;
+   border: none;
+   box-shadow: -5px -3px 5px 2px rgba(128, 128, 128, 0.483);
+   border-radius: 5px;
+   line-height: 50px;
+   margin: auto 5px;
+   font-size: 18px;
+}
+.project .passwordGenerator ol{
+   padding-left: 25px;
+   width: 100%;
+   box-sizing: border-box;
+}
+.project .passwordGenerator li{
+   font-size: 16px;
+   font-weight: 600;
+   color: white;
+}
+
+.project .loanRepayment{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start ;
+}
+.project .loanRepayment .getAmountToLoan{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: flex-start;
+   /* background: red; */
+}
+.project .getAmountToLoan>div{
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: space-between;
+}
+.project .loanRepayment input{
+   width: 55%;
+   padding: 10px;
+   background: rgb(6, 6, 6);
+   border: none;
+   outline: none;
+   box-shadow: inset 0px 0px 5px white;
+   color: gray;
+   border-radius: 5px;
+   font-size: 20px;
+   font-weight: 900;
+}
+.project .loanRepayment button{
+   background: rgb(6, 6, 6);
+   color: gray;
+   border: none;
+   box-shadow: -5px -3px 5px 2px rgba(128, 128, 128, 0.483);
+   border-radius: 5px;
+   line-height: 50px;
+   margin: auto 5px;
+   font-size: 18px;
+}
+.project .loanRepayment select{   
+   background: rgb(6, 6, 6);
+   color: gray;   
+   line-height: 50px;
+   padding: 10px;
+   border-radius: 5px;
+   font-size: 15px;
+}
+
+
+.project .guessgame>div{
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: space-between;
+}
+.project .guessgame input{
+   width: 55%;
+   padding: 10px;
+   background: rgb(6, 6, 6);
+   border: none;
+   outline: none;
+   box-shadow: inset 0px 0px 5px white;
+   color: gray;
+   border-radius: 5px;
+   font-size: 20px;
+   font-weight: 900;
+}
+.project .guessgame button{
+   background: rgb(6, 6, 6);
+   color: gray;
+   border: none;
+   box-shadow: -5px -3px 5px 2px rgba(128, 128, 128, 0.483);
+   border-radius: 5px;
+   line-height: 50px;
+   margin: auto 5px;
+   font-size: 18px;
+}
+.project #resetGuess{
+   visibility: hidden;
+   position: absolute;
+   background-color: white;
+   color: black;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+   .project-list{
+      margin:25px 20px 0px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+   .project-list .project{
+      margin: 10px 0px;
+      border-radius: 10px;
+      padding: 10px 20px;
+      border: 2px solid gray;
+      width: 100%;
+      box-sizing: border-box;
+   }
+   .project .vals input{
+      width: 35%;
+   }
+}
