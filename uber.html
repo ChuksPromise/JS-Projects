@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UBER</title>
+        <link rel="stylesheet" href="uber.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="icon" href="./site-icon.PNG">
+        
+    </head>
+    <body>
+       
+        <div class="allbox">
+            <a href="index.html" class="see-more">
+                SEE MORE
+            </a>
+            <div class="uber">
+                <h1>
+                    UBER
+                </h1>
+    
+                <div id="bookride" class="bookride">
+                    <p>
+                        Book a Ride 
+                    </p>
+                    <form id="form">
+                        <label>From :</label>
+                        <input type="text" id="from">
+                        <label>To :</label>
+                        <input type="text" id="to">
+                        <button type="submit">Book Ride</button>
+                    </form>
+    
+                </div>
+    
+                <div id="locinfoBox" class="locinfoBox">
+                    <div id="locInfo" class="locInfo">
+                        
+                    </div>
+                    <div>
+                        <button id="cancelride">CANCEL</button>
+                        <button id="startride">START RIDE</button>
+                    </div>
+                </div>
+    
+                <div id="stopWatch" class="stopWatch">
+                    <!-- <span id="hours"></span>
+                    <span> 2 hours :</span> -->
+                    <div>
+                        <span id="mins">00</span>    
+                        <span>:</span>
+                        <span id="sec">00</span>
+                    </div>
+                    <div id="wish">
+                        
+                    </div>   
+                    <div>
+                        <button id="exam">CONTINUE RIDE</button>
+                        <button id="pauseCount" style="display: none;">PAUSE RIDE</button>
+                        <button id="stopCount" style="display: none;">STOP RIDE</button>
+                    </div>  
+                </div>
+    
+                <div id="receiptBox" class="receiptBox">
+                    <div id="rideEnds">
+                        Ride Has Ended
+                        <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                    <table cellpadding="10" id="receipt" class="receipt">
+                        <tr>
+                            <td>Time Taken</td>
+                            <td id="time"></td>
+                        </tr>
+                        <tr>
+                            <td>Time Fare</td>
+                            <td id="timefare"></td>
+                        </tr>
+                        <tr>
+                            <td>Base Fare</td>
+                            <td id="basefare"></td>
+                        </tr>
+                        <tr>
+                            <td>TAX %</td>
+                            <td id="tax"></td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td id="totalpayment"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="uber.js"></script>
+    </body>
+</html>
