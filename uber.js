@@ -94,7 +94,7 @@ const startCounting = () =>{
         //decrease timing 
         timeInSeconds ++
         timeFormat()
-    }, 10)
+    }, 1000)
     // to hide the start
     Object.assign(locinfoBox.style, HiddenStyle) 
     // shows the count down
