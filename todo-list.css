@@ -1,0 +1,110 @@
+*{
+   font-size: 17px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Todo-List{
+   background: brown;
+   padding: 20px;
+   width: 40%;
+   margin: 0px auto;
+}
+.Todo-List>input{
+   padding: 10px;
+   width: 100%;
+   border: none;
+   margin: 5px 0px;
+   outline: none;
+   box-sizing: border-box;
+}
+.Todo-List .timesec{
+   margin: 5px 0px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+.Todo-List .timesec div {
+   width: 45%;
+   display: flex;
+   flex-direction: column;
+}
+.timesec label{
+   color: white;
+}
+.timesec input{
+   margin: 5px 0px;
+   padding: 5px;
+   outline: none;
+   border: none;
+}
+.Todo-List button{
+   width: fit-content;
+   margin: 0px auto;
+   text-align: center;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 5px;
+   font-weight: 600;
+   background: orangered;
+   color: wheat;
+}
+.Todo-List ul{
+   padding: 0px;
+   list-style-type: none;
+   color: white;
+   height: 200px;
+   overflow: auto;
+}
+.Todo-List ul li:first-child{
+   position: sticky;
+   top: 0px;
+   background: rgba(255, 255, 255, 0.193);
+   backdrop-filter: blur(5px);
+}
+.Todo-List ul li{
+   display: flex;
+   justify-content: space-between;
+   margin: 3px 0px;
+   padding: 8px 5px;
+   /* background: purple; */
+}
+.Todo-List li div{
+   /* background: red; */
+   width: 30%;
+
+}
+.Todo-List li .duration{
+   text-align: center;
+}
+.Todo-List li .manage{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+}
+.Todo-List .manage i{
+   padding: 8px 10px;
+   border-radius: 100%;
+   cursor: pointer;
+   border: 1px solid whitesmoke;
+   margin: 2px;
+   color: whitesmoke;
+   transition: all 0.5s ease-in-out 0s;
+}
+.Todo-List i:hover{
+   background: orangered;
+   color: whitesmoke;
+}
+
+
+@media screen and (max-width: 567px) {
+   .Todo-List{
+      width: 100%;
+      box-sizing: border-box;
+   }
+   .Todo-List .timesec{
+      flex-direction: column;
+   }
+   .Todo-List .timesec div {
+      width: 100%;
+   }
+}
